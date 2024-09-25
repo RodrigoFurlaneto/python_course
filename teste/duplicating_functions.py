@@ -1,8 +1,7 @@
-def duplicate (x):
-    return x * 2
+def criate_multiplier(multiplier):
+    def multiply(number):
+        return number * multiplier
+    return multiply
 
-def triplicate (int_value):
-    return int_value * 3
-
-print(duplicate(2))
-print(triplicate(int(input('enter a number: '))))
+duplicate = criate_multiplier(int(input('Enter the multiplier: ')))
+print(duplicate(int(input('Enter the value: '))))
